@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "name": "binary-search",
+  "name": "kholoddev-binary-search",
   "author": "kholoddev",
   "license": "ISC",
   "description": "Binary search",
@@ -11,6 +11,7 @@
   ],
   "main": "lib/index.js",
   "scripts": {
+    "publish": "npm publish",
     "eslint": "eslint lib"
   },
   "files": [
@@ -21,8 +22,7 @@
     "url": "git@github.com:kholodDev/binary-search.git"
   },
   "publishConfig": {
-    "access": "public",
-    "scope": "kholoddev"
+    "access": "public"
   },
   "devDependencies": {
     "eslint": "^7.20.0"
