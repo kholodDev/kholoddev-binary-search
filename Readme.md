@@ -5,7 +5,7 @@ Binary search for an ascending ordered array of numbers
 ## Install
 
 ```console
-$ npm i @kholoddev/binary/search
+$ npm i @kholoddev/binary-search
 ```
 
 ## Syntax
@@ -13,9 +13,9 @@ $ npm i @kholoddev/binary/search
 ```js
 /**
  * @param {number[]} array - Asc ordered array of numbers
- * @param {number} search - Sought number
+ * @param {number} search - search number
  * 
- * @returns {number|null} - Index of the sought number 
+ * @returns {number|null} - Index of the search number 
  */
 const result = binarySearch(array, search)
 ```
