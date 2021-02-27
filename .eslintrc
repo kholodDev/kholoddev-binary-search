@@ -1,13 +1,22 @@
 {
     "env": {
         "browser": true,
-        "es6": true,
-        "es2017": true,
-        "es2020": true,
-        "es2021": true
+        "node": true,
+        "jest": true
     },
-    "extends": ["eslint:all"],
+    "extends": [
+        "eslint:all",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking"
+    ],
     "plugins": [],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+		"project": "tsconfig.json",
+		"tsconfigRootDir": ".",
+        "sourceType": "module"
+	},
     "rules": {
         "semi": ["error", "never"],
         "array-element-newline": ["error", "consistent"],
@@ -51,6 +60,11 @@
         "no-mixed-operators": "off",
         "no-ternary": "off",
         "no-plusplus": "off",
-        "no-throw-literal": "off"
+        "no-throw-literal": "off",
+        "prefer-named-capture-group": "off",
+        "require-unicode-regexp": "off",
+        "default-param-last": "off",
+        "@typescript-eslint/restrict-plus-operands": "off",
+        "@typescript-eslint/ban-ts-comment": "off"
     }
 }
