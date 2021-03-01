@@ -15,10 +15,9 @@
   "scripts": {
     "start": "webpack --env development --watch",
     "build": "webpack --env production",
-    "publish": "npm publish",
+    "publish": "npm run eslint && npm run test && npm run build && npm publish",
     "test": "jest",
-    "eslint": "eslint ./",
-    "prepublish": "npm run eslint && npm run test && npm run build"
+    "eslint": "eslint ./"
   },
   "files": [
     "lib"
